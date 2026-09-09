@@ -23,7 +23,7 @@ python3 -m http.server 4173
 
 Open http://localhost:4173. Use an HTTP server rather than opening `index.html` directly because the JavaScript uses ES modules. No install or build step is needed.
 
-The version is **v0.7.2**. Change `CONFIG.version` in `src/data.js` to update both the header and scorecard.
+The version is **v0.7.3**. Change `CONFIG.version` in `src/data.js` to update both the header and scorecard.
 
 ## Hosting and deployment
 
@@ -42,7 +42,7 @@ The workflow requires the GitHub repository Actions secret **`HF_TOKEN`**, conta
 - **My language** offers three buttons: English, Español, and Русский. The selection controls the full interface and answer choices.
 - **Languages to test** is a collapsed disclosure with an enabled-language count. Checked chips are included; unchecked chips are left out. Your language is automatically excluded, and other selections survive language switches.
 - Optional Latin-letter readings for Greek, Russian, Ukrainian, Armenian, Georgian, and Japanese appear in parentheses beside the word. The word area reserves space to reduce layout shifts; long text can wrap.
-- Click one of four bold translation buttons to submit and advance immediately. There is no Next button.
+- Click one of four bold translation buttons to submit and advance immediately. Answer text is centered; desktop keyboard-shortcut badges stay on the left. There is no Next button.
 - The centered, amber **I don’t know :(** button (**No lo sé :(** in Spanish, **Не знаю :(** in Russian) advances and records an omission, separately from an incorrect answer.
 - The progress bar and its labels appear above the question. Stage steps, question count, and **Finish early** remain below the question and skip button. Mobile layouts use a smaller reserved word area to leave more room for answers and skipping, while allowing long text to wrap.
 - Routing scores and advancement thresholds are internal; no point rules appear on the question or transition screens.

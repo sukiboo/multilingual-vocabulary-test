@@ -1,7 +1,7 @@
 export { CONCEPTS } from './vocabulary/index.js';
 
 export const CONFIG = {
-  version: '0.7.2',
+  version: '0.7.3',
   referenceLanguages: ['en', 'es', 'ru'],
   defaultLanguages: ['en', 'es', 'fr', 'de', 'it', 'pt', 'sv', 'pl', 'ru', 'uk', 'fi'],
   optionCount: 4,
