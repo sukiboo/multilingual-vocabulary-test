@@ -189,6 +189,10 @@ function renderQuestion() {
   const latin = settings.romanization ? concept[`${language}Latin`] : null;
   app.innerHTML = `
     <section class="test-shell">
+      <div class="question-progress">
+        <div class="stage-progress-label"><span>${t[phase]} · ${stageNumber} / ${session.stageSize}</span><span>${session.stageLanguages.length} ${unit('languages', session.stageLanguages.length)}</span></div>
+        <div class="progress-track" role="progressbar" aria-label="${t[phase]}" aria-valuemin="0" aria-valuemax="${session.stageSize}" aria-valuenow="${stageNumber - 1}"><div style="width:${(stageNumber - 1) / session.stageSize * 100}%"></div></div>
+      </div>
       <div class="question-card">
         <div class="language-heading"><h1 tabindex="-1">${languageName(language)}</h1><span lang="${language}">${LANGUAGES[language].native}</span></div>
         <div class="word-display"><p class="foreign-word" lang="${language}">${concept[language]}${latin ? ` <span class="romanization" lang="${language}-Latn">(${latin})</span>` : ''}</p></div>
@@ -198,8 +202,6 @@ function renderQuestion() {
       <div class="question-navigation">
         <div class="test-topline"><span>${t.question} ${String(number).padStart(2, '0')} <span class="muted">/ ${t.upTo} ${session.maxQuestions}</span></span><button class="text-button" id="exit">${t.exit} ↗</button></div>
         ${stageSteps()}
-        <div class="stage-progress-label"><span>${t[phase]} · ${stageNumber} / ${session.stageSize}</span><span>${session.stageLanguages.length} ${unit('languages', session.stageLanguages.length)}</span></div>
-        <div class="progress-track" role="progressbar" aria-label="${t[phase]}" aria-valuemin="0" aria-valuemax="${session.stageSize}" aria-valuenow="${stageNumber - 1}"><div style="width:${(stageNumber - 1) / session.stageSize * 100}%"></div></div>
       </div>
       <p class="keyboard-hint">${t.shortcut}</p>
     </section>`;

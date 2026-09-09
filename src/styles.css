@@ -86,6 +86,7 @@ legend { padding: 0; }
 .stage-steps .active > span { background: var(--green); color: white; border-color: var(--green); }
 .stage-steps .complete > span { background: var(--wash); border-color: #b5c6b6; color: var(--green); }
 .stage-progress-label { display: flex; justify-content: space-between; font-size: 11px; color: var(--muted); }
+.question-progress { margin-bottom: 16px; }
 .question-navigation { margin-top: 28px; }
 .question-card { padding: 26px 32px 32px; border: 1px solid var(--line); border-radius: 18px; background: var(--card); text-align: center; }
 .language-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
