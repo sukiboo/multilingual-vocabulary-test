@@ -27,7 +27,7 @@ The version is **v0.7.0**. Change `CONFIG.version` in `src/data.js` to update bo
 
 ## Hosting and deployment
 
-- **Play:** https://sukiboo-multilingual-vocabulary-test.hf.space
+- **Play:** https://sukiboo-multilingual-vocabulary-test.static.hf.space
 - **Hugging Face Space:** https://huggingface.co/spaces/sukiboo/multilingual-vocabulary-test
 - **Source:** https://github.com/sukiboo/multilingual-vocabulary-test
 
@@ -138,4 +138,4 @@ This measures observed word recognition, not fluency, vocabulary size, speaking,
 
 All session state and repeat-avoidance history stay in memory. History stores only each target-word spelling’s most recent run number per language, not previous answers or scores. No backend, persistence, analytics, uploads, external requests, or accounts. Refreshing discards the session and history.
 
-Automated tests and browser verification have not been run.
+JavaScript syntax, the deployment workflow, and public asset availability have been checked. Automated quiz tests and browser verification have not been run.
